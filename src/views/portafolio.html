@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <%-include('partials/head.html')%>
+</head>
+<body>
+    <%-include('partials/navigation.html')%>
+    <h1>Portafolio</h1>
+    <div class="row" id="portfolioCards" >
+        <div class="col-md-3 mb-3 p-4">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title justify-content-between align-items-center">
+                        Portafolio
+                    </h4>
+                    <img src="img/portfolioIMG.png" >
+                    <p>Mi portafolio</p>
+                    <a href="https://github.com/rubenromanvilasau" target="_blank" rel="noopener" class="btn btn-primary">Ver proyecto</a>
+                </div>
+            </div>
+        </div>  
+        <div class="col-md-3 mb-3 p-4">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title justify-content-between align-items-center">
+                        Node login
+                    </h4>
+                    <img src="img/nodelogin.png" >
+                    <p>Login hecho con node js para aprender</p>
+                    <a href="https://github.com/rubenromanvilasau/node-login" target="_blank" rel="noopener" class="btn btn-primary">Ver proyecto</a>
+                </div>
+            </div>
+        </div>        
+    </div>
+
+   
+    <%-include('partials/footer.html')%>
+</body>
+</html>

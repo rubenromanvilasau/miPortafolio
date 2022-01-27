@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajemos</title>
+    <%-include('partials/head.html')%>
+</head>
+<body>
+    <%-include('partials/navigation.html')%>
+    <%if( typeof(errors) !="undefined" ){%>
+    <%errors.forEach(function(error){ %> 
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <%=error.text%>  
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+          <%})%>         
+    <%}%>
+    <%if(typeof(success)!="undefined"){%>
+        <%if(success){%>
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                Mensaje enviado con éxito!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <%}%>
+    <%}%>
+    <div class="container p-5">
+        <div class="row">
+            <div class="col-md-4 offset-md-4">
+                <div class="card " card animated__animated animate__flipInY">
+                    <div class="card-header bg-light text-black text-center">
+                        <br>
+                        <h4>Conversemos</h4>
+                        <div class="card-body">
+                            <form action="/trabajamos" method="post">
+                                <div class="mt-3">
+                                    <input type="text" name="nombre" class="form-control" placeholder="Tu nombre" autofocus>
+                                </div>
+                                <div class="mt-3">
+                                    <input type="email" name="email" class="form-control" placeholder="Email" >
+                                </div>                        
+                                <div class="mt-3">
+                                    <textarea class="form-control" name="message" id="" cols="30" rows="10" placeholder="Mensage"></textarea>
+                                </div>
+                                <div class="mt-3">
+                                    <button class="btn btn-primary w-100" types="submit">
+                                        Enviar
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%-include('partials/footer.html')%>
+</body>
+</html>

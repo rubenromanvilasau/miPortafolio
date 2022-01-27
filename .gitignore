@@ -1,2 +1,5 @@
+#Carpeta node modules
 node_modules
+
+#Credentials
 .env

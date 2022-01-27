@@ -20,4 +20,4 @@
   EMAIL_PASSWORD= email password
   
  ## Correr en local
-  Para correr en local primero configurar variables de entorno, luego correr el comando npm install, y posteriormente ingresar a localhost:3000
+  Para correr en local primero configurar variables de entorno, luego correr el comando npm install, luego npm run dev y posteriormente ingresar a localhost:3000

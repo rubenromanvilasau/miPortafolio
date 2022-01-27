@@ -2,10 +2,10 @@
 
 ## Tabla de contenidos
 
-- [Descripción] (#descripcion)
-- [Tecnologias usadas] (#tecnologias-usadas)
-- [Variables de entorno] (#)
-- [Correr en local] (#)
+- [Descripción](#descripcion)
+- [Tecnologias usadas](#tecnologias-usadas)
+- [Variables de entorno](#variables-de-entorno)
+- [Correr en local](#correr-en-local)
 
 ## Descripción
   Portafolio creado para exponer mis proyectos
